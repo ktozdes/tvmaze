@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html><head>
+    <meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJla0c000b578680fb7a41be53cf3817aa5"/>
+    <meta charset="utf-8">
+    <title>test</title>
+    <meta name="generator" content="Google Web Designer 5.1.0.0529">
+    <link rel="stylesheet" href="assets/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src="assets/js/paginate.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+
+<body class="htmlNoPages">
+
+    <div class="container">
+        <div class="notification">
+            <h1 class="title">TvMaze</h1>
+            <div class="columns">
+                <div class="column">
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal has-text-left">
+                            <label class="label">Search Show: </label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                              <p class="control">
+                                <input id="search-text" class="input search-text" type="text" placeholder="Text input">
+                              </p>
+                            </div>
+                        </div>
+                        <div class="control">
+                            <button id="search-button" class="button is-link search-button">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <h4 class="subtitle" id="search-title">All TV Shows</h4>
+            </div>
+            <br/>
+            <div class="columns">
+                <nav class="pagination" role="navigation" aria-label="pagination">
+                    <button class="pagination-previous"    id="first" onclick="firstPage()">First</button>
+                    <button class="pagination-previous" id="previous" onclick="previousPage()" >Previous</button>
+                    <button class="pagination-next"     id="next" onclick="nextPage()" >Next page</button>
+                    <button class="pagination-next"     id="last" onclick="lastPage()">Last</button>
+                    
+                </nav>
+            </div>
+            <div class="columns">
+                <div class="column search-result-container">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
